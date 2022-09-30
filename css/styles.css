@@ -1,0 +1,227 @@
+:root{
+    --main-text:#757575;
+    --accent-color:#2196F3;
+    --logo-black-color:#000000;
+    --secondary-text:#212121;
+    --main-section:#2F303A;
+    --main-white:#FFFFFF;
+    --section-team:#F5F4FA;
+    
+}
+
+
+/* основний колір #212121 (h)*/
+/* вторинний колір #757575 (p)*/
+/* білий колір #FFFFFF */
+/* акцент #2196F3 (лого + кнопки) */
+/* вторинний колір фона #F5F4FA (секція "Наша команда) */
+
+body {
+    background-color:var();
+    color: var(--main-text);
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+/*-------------- Header --------------*/
+
+.logo{
+    text-decoration: none;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    color: var(--logo-black-color);
+    letter-spacing: 0.03em;
+}
+
+.logo>span:first-child {
+    color: var(--accent-color);
+}
+
+.link{
+    color:var(--secondary-text) ;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.link:hover{
+    color:var(--accent-color);
+}
+
+.link-mail{
+    color: var(--logo-black-color);
+    text-decoration: none;
+}
+.link-mail:hover{
+    color: var(--accent-color);
+}
+
+.tell-link{
+    color: var(--logo-black-color);
+    text-decoration: none;
+}
+.tell-link:hover{
+    color:var(--accent-color);
+}
+
+/* -------------Main------------ */
+
+.section{
+    background-color:var(--main-section);
+}
+.title{
+    color:var(--main-white);
+    font-family: 'Roboto';
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+.button{
+    color: var(--main-white);
+    background-color:var(--accent-color);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+
+.button-portfolio{
+    background-color: var(--section-team);
+    color: var(--main-section);
+}
+
+.button-portfolio:hover{
+    color: var(--accent-color);
+}
+
+.section-second{
+    background-color:var(--main-white);
+}
+
+.description{
+    color: var(--secondary-text);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+}
+
+.title-description{
+    color:var(--main-text);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.work{
+    color:var(--secondary-text);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.team{
+    background-color: var(--section-team);
+}
+
+.item{
+    color:var(--main-white);
+}
+
+.name{
+    color: var(--secondary-text);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.profession{
+    color: var(--main-text);
+     font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+/* --------Footer---------- */
+.the-end{
+    background-color:var(--main-section);
+}
+
+.logo-footer>span:first-child {
+    color: var(--accent-color);
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+}
+
+.logo-footer>span:last-child {
+    color:var(--main-white);
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+}
+
+.logo-footer {
+    text-decoration: none;
+}
+
+.link-footer{
+    color:var(--main-white);
+}
+
+.the-end-footer{
+    color:var(--main-white);
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+     letter-spacing: 0.03em;
+    
+}
+
+.mail{
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.tell{
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+}
+
+.adress{
+    font-style: normal;
+}

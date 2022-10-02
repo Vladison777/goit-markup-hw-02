@@ -16,9 +16,10 @@
 /* вторинний колір фона #F5F4FA (секція "Наша команда) */
 
 body {
-    background-color:var();
+    background-color:var(--main-white);
     color: var(--main-text);
     font-family: 'Roboto', sans-serif;
+    font-size: 14px;
 }
 
 ul {
@@ -41,33 +42,29 @@ ul {
     color: var(--accent-color);
 }
 
-.link{
+.nav-link{
     color:var(--secondary-text) ;
     text-decoration: none;
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
 
-.link:hover{
+.nav-link:hover
+.nav-link:focus{
     color:var(--accent-color);
 }
 
-.link-mail{
-    color: var(--logo-black-color);
-    text-decoration: none;
-}
-.link-mail:hover{
+.nav-link .current{
     color: var(--accent-color);
 }
 
-.tell-link{
-    color: var(--logo-black-color);
+.contact-link{
+    color: var(--main-text);
     text-decoration: none;
 }
-.tell-link:hover{
-    color:var(--accent-color);
+.contact-link:hover{
+    color: var(--accent-color);
 }
 
 /* -------------Main------------ */
@@ -75,7 +72,7 @@ ul {
 .section{
     background-color:var(--main-section);
 }
-.title{
+.section-title{
     color:var(--main-white);
     font-family: 'Roboto';
     font-weight: 900;
@@ -83,6 +80,7 @@ ul {
     line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
+    text-transform: uppercase;
 }
 .button{
     color: var(--main-white);
@@ -106,29 +104,29 @@ ul {
     color: var(--accent-color);
 }
 
-.section-second{
+.about{
     background-color:var(--main-white);
 }
 
-.description{
+.visually-hidden{
+
+}
+
+.about-title{
     color: var(--secondary-text);
-    font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
+    text-transform: uppercase;
 }
 
-.title-description{
-    color:var(--main-text);
-    font-weight: 400;
-    font-size: 14px;
+.about-description{
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
 
-.work{
+.subtitle{
     color:var(--secondary-text);
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
@@ -140,10 +138,10 @@ ul {
 }
 
 .item{
-    color:var(--main-white);
+    
 }
 
-.name{
+.team-name{
     color: var(--secondary-text);
     font-weight: 500;
     font-size: 16px;
@@ -152,9 +150,7 @@ ul {
     letter-spacing: 0.03em;
 }
 
-.profession{
-    color: var(--main-text);
-     font-weight: 400;
+.team-profession{
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
@@ -192,34 +188,89 @@ ul {
     color:var(--main-white);
 }
 
-.the-end-footer{
+.google-contact{
     color:var(--main-white);
     text-decoration: none;
-    font-weight: 400;
-    font-size: 14px;
     line-height: 1.71;
-     letter-spacing: 0.03em;
+    letter-spacing: 0.03em;
     
 }
 
-.mail{
+/* .footer-contact .google {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+} */
+
+.footer-contact{
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-}
 
-.tell{
-    color: rgba(255, 255, 255, 0.6);
-    text-decoration: none;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+}
+ .footer-contact:hover,
+ .footer-contact:focus{
+    color: var(--accent-color);
+ }
+
+ .google-contact:hover,
+ .google-contact:focus{
+    color: var(--accent-color);
+ }
+
+
+ /* -----------Портфолио-------------- */
+
+ .button-portfolio{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
     letter-spacing: 0.03em;
+ }
 
-}
+ .button-portfolio{
+    background-color: var(--section-team);
+    color: var(--main-section);
+    transition: 0.7s;
+ }
+
+ .button-portfolio.desk{
+    background-color: var(--accent-color);
+    color: var(--logo-black-color);
+ }
+
+ .button-portfolio.desk:hover{
+    color: var(--main-white);
+ }
+
+ .button-portfolio:hover{
+    background-color: var(--accent-color);
+    color: var(--main-white);
+ }
+
+ .project-name{
+    color: var(--secondary-text);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+ }
+
+ .project-text{
+    color: var(--main-text);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+ }
 
 .adress{
     font-style: normal;

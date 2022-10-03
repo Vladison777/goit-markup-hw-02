@@ -100,14 +100,6 @@ ul {
     letter-spacing: 0.06em;
 }
 
-.button-portfolio{
-    background-color: var(--section-team);
-    color: var(--main-section);
-}
-
-.button-portfolio:hover{
-    color: var(--accent-color);
-}
 
 .about{
     background-color:var(--main-white);
